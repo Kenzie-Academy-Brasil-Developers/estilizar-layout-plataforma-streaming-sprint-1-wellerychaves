@@ -1,66 +1,119 @@
-/*
-Theme Name: KenzieFlix
-Author: Kenzie Academy
-Author URI: kenzie.com.br;
-Version: 1.0
- 
---------------------------------------------
-SUGESTÃO DE ESTRUTURAÇÃO BASE 
---------------------------------------------
-**** DECLARAÇÃO DE VARIÁVEIS
-**** BODY
-**** TOPO
-**** RODAPÉ
-**** PÁGINA INICIAL
-*/
-
-/* VARIÁVEIS */
-:root {}
-
-/*BODY*/
 body {
 	background-color: #00002e;
-
-}
-
-/*TOPO*/
-header.topo {
-	text-align: center;
-	color: white;
 	font-family: Arial, Helvetica, sans-serif;
+	color: white;
 }
 
-h2 {
-	font-size: 3em;
-	text-align: center;
+.topo img {
+	width: 200px;
+	margin-top: -15px;
+	margin-left: -45px;
+	cursor: pointer;
 }
 
-/*RODAPÉ*/
+#teste {
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+}
+
+#userBoxes {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: center;
+}
+
+#userBoxes__ul {
+	padding: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	align-items: center;
+	align-content: space-between;
+	justify-content: space-around;
+}
+
+#userBoxes__li1 img {
+	width: 150px;
+	border-radius: 5px;
+}
+
+#userBoxes__li2 img {
+	width: 150px;
+	border-radius: 5px;
+}
+
+#userBoxes__li3 img {
+	width: 150px;
+	border-radius: 5px;
+}
+
+#userBoxes__li4 img {
+	width: 100px;
+	border-radius: 100%;
+}
+
+#userBoxes__li1 img:active {
+	border: 2px gainsboro solid;
+}
+
+#userBoxes__li2 img:active {
+	border: 2px gainsboro solid;
+}
+
+#userBoxes__li3 img:active {
+	border: 2px gainsboro solid;
+}
+
+#userBoxes__li4 img:active {
+	border: 2px gainsboro solid;
+}
+
+#userBoxes__li4 h3 {
+	padding-top: 53px;
+}
+
+#userBoxes li {
+	width: 186px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#userBoxes li h3 {
+	margin-top: -5px;
+	font-weight: lighter;
+	font-size: 15px;
+}
+
 footer {
 	display: flex;
+	justify-content: center;
+}
+
+button {
 	border-style: none;
-	border: 1px #00002e;
-	height: 50px;
-	width: 200px;
+	background-color: #00002e;
 	color: white;
-	cursor: pointer;
+	border: 2px #ffffff solid;
 	border-radius: 5px;
-	text-decoration: none;
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
 }
 
-/*PÁGINA INICIAL*/
-div.pg-home {
-	font-family: Arial, Helvetica, sans-serif;
-	color: white;
-}
+@media only screen and (min-width: 1000px) {
+	body {
+		background-color: #00002e;
+		width: 1366px;
+	}
 
-ul {
-	display: flex;
-	list-style: none;
-	text-align: center;
-
-}
-
-img {
-	width: 186px;
+	.topo figure {
+		display: flex;
+		justify-content: center;
+	}
 }
