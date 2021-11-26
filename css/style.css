@@ -25,6 +25,8 @@ body {
 	flex-wrap: wrap;
 	flex-direction: row;
 	align-content: center;
+	width: 858px;
+	margin: 0 auto;
 }
 
 #userBoxes__ul {
